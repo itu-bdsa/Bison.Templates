@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <Version>1.0.0</Version>
+        <PackageId>BDSA.TEMPLATES.BISON</PackageId>
+        <Authors>Eduard Kamburjan</Authors>
+        <Title>BDSA Templates</Title>
+        <Description>Razor templates for the BDSA Course at the IT University of Copenhagen</Description>
+        <PackageTags>dotnet new, template</PackageTags>
+        <PackageIcon>icon1.png</PackageIcon>
+        <TargetFramework>net8.0</TargetFramework>
+
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="Bison.Razor.Initial\**\*" Excludes="Bison.Razor.Initial\**\bin\**;Bison.Razor.Initial\**\obj\**" />
+
+        <Compile Remove="**\*" />
+
+        <None Include="Bison.Razor.Initial\wwwroot\images\icon1.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+</Project>
