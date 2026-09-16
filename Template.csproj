@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <PackageId>BDSA.TEMPLATES.BISON</PackageId>
         <Authors>Eduard Kamburjan</Authors>
         <Title>BDSA Templates</Title>
